@@ -1,0 +1,21 @@
+{
+  "name": "fill-wallet-db",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "prettier": "npx prettier -w ./src "
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pify": "^6.1.0",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "prettier": "2.8.8"
+  }
+}
