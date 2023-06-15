@@ -56,6 +56,7 @@ async function run() {
   );
 
   const asyncDB = await pify(db);
+  await asyncDB.run("PRAGMA user_version = 1");
   await asyncDB.run(
     "CREATE TABLE currencies (id TEXT PRIMARY KEY, name TEXT, alpha_code TEXT, _status TEXT, _changed TEXT)"
   );
